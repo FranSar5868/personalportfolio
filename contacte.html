@@ -7,6 +7,31 @@
     <title>Contacta</title>
 </head>
 <body>
-    
+    <header>
+        <a href="index.html">Inici</a>
+        <a href="cv.html">CV</a>
+        <a href="contacte.html">Contacte</a>
+    </header>
+    <h1>Contacta</h1>
+    <form action=""><!-- Formulari -->
+
+        <label for="f_name">Nom</label><!-- Etiqueta lligada a un camp a través de l'atribut "for", al que se li indica l'ID del camp al quan fa referència-->
+        <input type="text" name="name" id="f_name" placeholder="El teu nom"><!-- Input de tipus text. L'atribut "name" s'utilitza per tractar la informació quan s'envia el formulari.
+        l'atribut "id" serveix per identificar el camp desde JavaScript i per lligar-lo a una etiqueta. "placeholder" és un text per defecte per indicar a l'usuari que hi ha d'escriure. -->
+<br>
+        <label for="f_name">Email</label>
+        <input type="email" name="email" id="f_email" placeholder="El teu email"><!-- Input de tipus email -->
+<br>
+        <label for="f_tarea">Commentaris</label>
+        <textarea name="comments" id="f_tarea" cols="30" rows="10"></textarea><!-- Caixa de text de múltiples columnes i files -->
+
+
+ <br>   
+        <label for="f_accept">Accepto el tractament de les meves dades segons la <a href="https://www.privacypolicy.com">política de privacitat</a></label>
+        <input type="checkbox" name="accept" id="f_accept"><!-- Checkbox -->
+<br>
+        <input type="submit" value="Enviar"><!-- Botó d'enviament del formulari amb el text "Send Form"-->
+
+    </form>
 </body>
 </html>

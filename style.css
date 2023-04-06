@@ -57,3 +57,19 @@ html {
   .greenyellow {
     background-color:greenyellow;
   }
+  .index {
+    display: flex;
+    list-style: none;
+    margin: auto;
+  }
+  .index {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .index li a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }

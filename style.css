@@ -1,6 +1,27 @@
-*{
-    box-sizing: border-box;
-}
-h2{
-    color: gray
-}
+html {
+    scroll-behavior: smooth; /* fa que els salts entre enllaços siguis suaus */
+  }
+  body {
+    margin: 0; /* elimina espai blanc entre contingut i les vores del viewport (pantalla) */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  table {
+    margin: auto; /* centrat automàtic */
+  }
+  table,
+  th,
+  td {
+      border: 1px solid black;
+      text-align: center;
+  }
+  th, 
+  td {
+    padding: 1rem; /* espai entre les vores i el contingut */
+  }
+
+  h2 {
+    text-align: center; /* provar amb left o right */
+    font-size: 2rem; /* mida del text */
+    margin-bottom: 3rem;
+  }

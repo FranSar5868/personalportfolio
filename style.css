@@ -33,15 +33,24 @@ html {
   }
 
   .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     height: 300px; /* es força una alçada */
     background-image: url('https://picsum.photos/id/1021/1200/300'); /* es posa una imatge de fons a partir d'un recurs local o extern. Si és un recurs local: url('assets/lamevaimatge.jpg') */
     background-size: cover; /* forçar que la imatge de fons cobreixi tot l'espai del seu contenidor */
   }
+  .title_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      height: 300px; /* es força una alçada */
+      background-image: url('https://picsum.photos/id/1011/1200/300?grayscale'); /* es posa una imatge de fons a partir d'un recurs local o extern. Si és un recurs local: url('assets/lamevaimatge.jpg') */
+      background-size: cover; /* forçar que la imatge de fons cobreixi tot l'espai del seu contenidor */
+    }
+
   h1 {
-    color: greenyellow;
+      color: greenyellow;
     font-size: 4rem;
     text-shadow: 0 0 4px black; /* ombrejat al voltant del text */
   }
@@ -123,4 +132,25 @@ section > * {
     padding: 2rem;
     margin-top: 4rem;
     background-color: greenyellow;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-checkbox label {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  input[type="submit"] {
+    width: 120px;
+    margin: 0 auto;
   }

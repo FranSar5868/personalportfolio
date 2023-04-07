@@ -13,7 +13,14 @@
         <a href="cv.html">CV</a>
         <a href="contacte.html">Contacte</a>
     </header>
+
+    <section class="title_contact">
     <h1>Contacta</h1>
+    </section>
+
+    <section class="">
+        <h2>Parlem!</h2>
+        </section>
     <form action=""><!-- Formulari -->
 
         <label for="f_name">Nom</label><!-- Etiqueta lligada a un camp a través de l'atribut "for", al que se li indica l'ID del camp al quan fa referència-->
@@ -23,15 +30,18 @@
         <label for="f_name">Email</label>
         <input type="email" name="email" id="f_email" placeholder="El teu email"><!-- Input de tipus email -->
 <br>
-        <label for="f_tarea">Commentaris</label>
+        <label for="f_tarea">Comentaris</label>
         <textarea name="comments" id="f_tarea" cols="30" rows="10"></textarea><!-- Caixa de text de múltiples columnes i files -->
 
 
  <br>   
-        <label for="f_accept">Accepto el tractament de les meves dades segons la <a href="https://www.privacypolicy.com">política de privacitat</a></label>
+        <div class="form-checkbox">
         <input type="checkbox" name="accept" id="f_accept"><!-- Checkbox -->
+        <label for="f_accept">Accepto el tractament de les meves dades segons la <a href="https://www.privacypolicy.com">política de privacitat</a></label>
+        </div>
 <br>
-        <input type="submit" value="Enviar"><!-- Botó d'enviament del formulari amb el text "Send Form"-->
+        
+<input type="submit" value="Enviar"><!-- Botó d'enviament del formulari amb el text "Send Form"-->
 
     </form>
 </body>

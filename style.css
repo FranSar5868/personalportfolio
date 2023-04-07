@@ -28,7 +28,7 @@ html {
     padding: 1rem;
   }
   .header a {
-    color: purple; /* color de la lletra */
+    color: grey; /* color de la lletra */
     text-decoration: none; /* decoració del text. Prova què passa si es treu */
   }
 

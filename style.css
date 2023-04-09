@@ -160,9 +160,34 @@ section > * {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 300px;
   }
 
   .presentation p {
     flex-grow: 1;
-    margin-right: 20px;
+    margin-right: 30px;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-direction: row; 
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border: 1px solid #222;
+    border-radius: 16px;
+    /overflow: hidden;
+    box-shadow: 0 0 15px 15px #666;
+  }
+  
+  .card > p {
+    padding: 1rem;
+  }
+  
+  .card > button {
+    margin: 1rem;
+    padding: .5rem 1rem; 
   }

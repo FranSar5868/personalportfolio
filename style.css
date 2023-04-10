@@ -218,6 +218,14 @@ section > * {
   .dark {
     background-color: #222;
   }  
+  
+  .experiencia {
+    color: white;
+    padding: 2rem;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+  }
 
   .round {
     transform: rotate(-90deg);

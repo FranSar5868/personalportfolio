@@ -208,3 +208,36 @@ section > * {
     font-size: 24px;
     padding: 30px;
   }
+  .experiencia_container {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  } 
+  
+
+  .dark {
+    background-color: #222;
+  }  
+
+  .round {
+    transform: rotate(-90deg);
+    transition: all 1s ease-in-out;
+    /* SVG */
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+  }
+
+  .svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .percentage {
+    position: absolute;
+    margin: auto;
+    font-size: 2rem;
+    color: white;
+  }

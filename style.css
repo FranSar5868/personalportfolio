@@ -179,7 +179,7 @@ section > * {
     width: 20vw;
     border: 1px solid #222;
     border-radius: 16px;
-    /overflow: hidden;
+    overflow: hidden;
     box-shadow: 0 0 15px 15px #666;
   }
   

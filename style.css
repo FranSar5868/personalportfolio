@@ -167,11 +167,16 @@ section > * {
     flex-grow: 1;
     margin-right: 30px;
   }
+
+  /* Maquetació Els meus projectes */
+
+
   .cards {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    flex-direction: row; 
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .card {
     display: flex;
@@ -192,50 +197,14 @@ section > * {
     padding: .5rem 1rem; 
   }
   
-  /* Maquetació Aficions */
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    background-color: #fff;
-    color: #444;
-    padding: 20px;
-  }
   
-  .box {
-    background-color: #444;
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    padding: 30px;
-  }
-
-  /* 
-s'aplicarà per pantalles de COM A MÀXIM 600px, o el que és el mateix, pantalles MÉS PETITES de 600px
-*/
-@media only screen and (max-width: 600px) {
-  .grid-container {
-  grid-template-columns: repeat(1, 1fr);
-  }
-}
-/* 
-s'aplicarà per pantalles de entre 601px i 992px, o sigui tablets
-*/
-@media only screen and (min-width: 601px) and  (max-width: 992px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    }
-}
-
- /* Maquetació Experiència */
-
+  /* Maquetació Experiència */
+  
   .experiencia_container {
     padding: 2rem;
     display: flex;
     justify-content: space-evenly;
   } 
-  
 
   .dark {
     background-color: #222;
@@ -271,3 +240,78 @@ s'aplicarà per pantalles de entre 601px i 992px, o sigui tablets
     font-size: 2rem;
     color: white;
   }
+
+
+  /* Maquetació Aficions */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: #fff;
+    color: #444;
+    padding: 20px;
+  }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
+  }
+
+    /* Maquetació Responsive */
+
+
+    /* 
+    s'aplicarà per pantalles de entre 601px i 992px, o sigui tablets
+    */
+    @media only screen and (min-width: 601px) and  (max-width: 992px) {
+      .cards {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: flex-start;
+      }
+      .card {
+        flex: 0 0 calc(50% - 5rem);
+        margin-right: 5rem;
+      }
+      .card:last-child {
+        margin-right: 0;
+  }
+  
+ .experiencia_container {
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+  
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* 
+s'aplicarà per pantalles de COM A MÀXIM 600px, o el que és el mateix, pantalles MÉS PETITES de 600px
+*/
+@media only screen and (max-width: 600px) {
+.cards {
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.card {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 1rem;
+}
+
+.experiencia_container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container {
+grid-template-columns: repeat(1, 1fr);
+}
+
+}

@@ -66,18 +66,17 @@ html {
   .greenyellow {
     background-color:greenyellow;
   }
+
+    /* Maquetació Index CV */
+
   .index {
     display: flex;
     list-style: none;
     margin: auto;
-  }
-  .index {
-    margin: auto;
-    display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
   }
-
 
 
 .index li {
@@ -298,7 +297,28 @@ section > * {
 s'aplicarà per pantalles de COM A MÀXIM 600px, o el que és el mateix, pantalles MÉS PETITES de 600px
 */
 @media only screen and (max-width: 600px) {
+  h1 {
+    color: greenyellow;
+  font-size: 2rem;
+  text-shadow: 0 0 4px black; /* ombrejat al voltant del text */
+}
+h2 {
+  color: grey;
+  text-align: center; /* provar amb left o right */
+  font-size: 1rem; /* mida del text */
+  margin-bottom: 3rem;
+}
  
+ 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td, th {
+    padding: 2px;
+    font-size: 8px;
+  }
+  
  
   .presentation2 {
     flex-wrap: wrap;

@@ -154,16 +154,19 @@ section > * {
     width: 120px;
     margin: 0 auto;
   }
+
+  /* Maquetació Hola! */
   
   .presentation2 {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 300px;
   }
 
-  .presentation p {
+  .presentation2 p {
     flex-grow: 1;
     margin-right: 30px;
   }
@@ -295,7 +298,16 @@ section > * {
 s'aplicarà per pantalles de COM A MÀXIM 600px, o el que és el mateix, pantalles MÉS PETITES de 600px
 */
 @media only screen and (max-width: 600px) {
-.cards {
+ 
+ 
+  .presentation2 {
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+    max-width: 100%;
+  }
+
+
+  .cards {
   gap: 1rem;
   justify-content: flex-start;
 }
